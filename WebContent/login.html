@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Página de Formulário</title>
+	<link rel="stylesheet" type="text/css" href="lib/css/estilo.css" />
+</head>
+<body>
+	<form name="form" action="http://localhost:8080/4Disciplina/ServletAutentificador" method="post">
+	CPF: <br/>
+	<input type="text" name="cpf" maxlength="14" pattern="\d(3)\.\d(3)\.\d(3)\-\d(2)"
+	title="Digite o CPF no formato: XXX.XXX.XXX-XX" />
+	Senha: <br/>
+	<input type="password" name="senha" title="Preencha o campo senha" required />
+	
+	<input type="submit" value="Enviar" />
+	</form>
+</body>
+</html>
